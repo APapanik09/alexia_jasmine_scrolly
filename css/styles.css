@@ -1,0 +1,39 @@
+:root {
+    --primary: black;
+    --borders: #CCAD5F;
+    --background: #CFF2F7;
+}
+
+body {
+    overflow: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/img_arriere_plan/chemin_arriere_lan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.intro {
+    text-align: center;
+    
+
+}
+
+img .cta {
+    display: flex;
+    justify-self: flex-end;
+}
