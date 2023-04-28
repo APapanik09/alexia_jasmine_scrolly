@@ -20,6 +20,7 @@
 }
 body {
  overflow-x: hidden;
+
 }
 
 .spritesheets {
@@ -122,6 +123,7 @@ section {
     animation-timing-function: steps(24);
     margin: 0 auto;
     position: absolute;
+    animation-play-state: paused;
 
 
   }
@@ -143,6 +145,7 @@ section {
     animation-iteration-count: infinite;
     animation-timing-function: steps(24);
     margin: 0 auto;
+    animation-play-state: paused;
 
   }
   
@@ -153,4 +156,12 @@ section {
   }
   
   
-  
+.is-scrolling .spritemarche  {
+    animation-play-state: running;
+
+}  
+
+.is-scrolling .spritefall  {
+    animation-play-state: running;
+
+}  
