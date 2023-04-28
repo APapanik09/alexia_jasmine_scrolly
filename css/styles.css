@@ -44,6 +44,9 @@ h1 {
     text-align: center;
     font-family: 'gilles';
     font-size: 5rem;
+    border-radius: 20%;
+    padding: 20px;
+    background-color: white;
 
 }
 
@@ -251,5 +254,104 @@ section {
     bottom: 5vh;
     left: 45vw;
     width: 15vw;
+}
+
+.windowsad {
+    background-color: white;
+    width: 10vw;
+    font-size: 2em;
+    border-radius: 20%;
+    padding: 20px;
+    position: absolute;
+    top: 20vh;
+    left: 15vw;
+}
+
+.liberation {
+    background-color: white;
+    width: 10vw;
+    font-size: 2em;
+    border-radius: 20%;
+    padding: 20px;
+    position: absolute;
+    top: 25vh;
+    right: 15vw;
+}
+
+.byebye{
+    background-color: white;
+    width: 10vw;
+    font-size: 2em;
+    border-radius: 20%;
+    padding: 20px;
+    position: absolute;
+    top: 25vh;
+    left: 15vw;
+}
+
+.vagabond{
+    background-color: white;
+    width: 10vw;
+    font-size: 2em;
+    border-radius: 20%;
+    padding: 20px;
+    position: absolute;
+    top: 25vh;
+    right: 15vw;
+}
+
+.lointexte{
+    background-color: white;
+    width: 20vw;
+    font-size: 2em;
+    border-radius: 25%;
+    padding: 20px;
+    position: absolute;
+    bottom: 7vh;
+    right: 15vw;
+}
+
+.forettexte{
+    background-color: white;
+    width: 20vw;
+    font-size: 2em;
+    border-radius: 25%;
+    padding: 20px;
+    position: absolute;
+    top: 7vh;
+    left: 10vw;
+}
+
+.idee{
+    background-color: white;
+    width: 20vw;
+    font-size: 2em;
+    border-radius: 25%;
+    padding: 20px;
+    position: absolute;
+    top: 30vh;
+    left: 40vw;
+}
+
+.pechetexte{
+    background-color: white;
+    width: 20vw;
+    font-size: 2em;
+    border-radius: 25%;
+    padding: 20px;
+    position: absolute;
+    bottom: 10vh;
+    left: 10vw;
+}
+
+.fintexte{
+    background-color: white;
+    width: 20vw;
+    font-size: 2em;
+    border-radius: 25%;
+    padding: 20px;
+    position: absolute;
+    bottom: 10vh;
+    right: 10vw;
 }
 
