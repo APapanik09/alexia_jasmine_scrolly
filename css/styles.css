@@ -94,6 +94,8 @@ section {
 
 #foretmarche {
     background-image: url(../img/img_arriere_plan/chemin_arriere_lan.png);
+    display: flex;
+    align-items: center;
 }
 
 #rencontrechat {
@@ -119,6 +121,8 @@ section {
     animation-iteration-count: infinite;
     animation-timing-function: steps(24);
     margin: 0 auto;
+    position: absolute;
+
 
   }
   
