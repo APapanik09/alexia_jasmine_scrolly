@@ -181,35 +181,38 @@ section {
 
 }  
 
-#tomber .spritefall  {
+.spritefall  {
     position: absolute;
     left: 10vw;
-    top: -43vh;
+    bottom: -100vh;
 
 }
 
 .boucle {
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     left: 47vw;
     width: 4vw;
+    opacity: 0%;
 
 
 }
 
 .collier {
     position: absolute;
-    top: 33vh;
+    top: -10vh;
     left: 47vw;
     width: 5vw;
+    opacity: 0%;
 
 }
 
 .vuedessus {
     position: absolute;
     width: 6vw;
-    left: 15vw;
-    top: 20vh;
+    right: 15vw;
+    bottom: 10vh;
+    rotate: 140deg;
 
 
 }
@@ -254,6 +257,8 @@ section {
     bottom: 5vh;
     left: 45vw;
     width: 15vw;
+    opacity: 100%;
+
 }
 
 .windowsad {
@@ -355,3 +360,10 @@ section {
     right: 10vw;
 }
 
+.chatsaute {
+    position: absolute;
+    right: 19vw;
+    bottom: 35vh;
+    rotate: -60deg;
+    opacity: 100%;
+}
