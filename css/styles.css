@@ -20,7 +20,6 @@
 }
 body {
  overflow-x: hidden;
-
 }
 
 .spritesheets {
@@ -68,14 +67,17 @@ img.cta {
 section {
     margin: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     height: 100vh;
     width: 100vw;
     background-position: center;
+    position: relative;
+    
 }
 
 #fenetre {
     background-image: url(../img/img_arriere_plan/fenetreacc.jpg);
+    position: relative;
 
     
 }
@@ -83,37 +85,47 @@ section {
 
 #tomber {
     background-image: url(../img/img_arriere_plan/mur_brique.png);
+    position: relative;
 }
 
 #rue {
     background-image: url(../img/img_arriere_plan/nonlineairegris.png);
+    position: relative;
+
 }
 
 #foretloin {
     background-image: url(../img/img_arriere_plan/foretarriere.png);
+    position: relative;
+
 }
 
 #foretmarche {
     background-image: url(../img/img_arriere_plan/chemin_arriere_lan.png);
-    display: flex;
-    align-items: center;
+    position: relative;
 }
 
 #rencontrechat {
     background-image: url(../img/img_arriere_plan/minoumiaoumiaouparler.png);
+    position: relative;
+
 }
 
 #pechechat {
     background-image: url(../img/img_arriere_plan/lacscene.jpg);
+    position: relative;
+
 }
 
 #etoilechat {
-    background-image: url(../img/img_arriere_plan/cieletoilechat_pascoeur.jpg);
+    background-image: url(../img/img_arriere_plan/etoileciel_paschat.jpg);
+    position: relative;
+
 }
 
 
 .spritemarche {
-    width: 20vw;
+    width: 10vw;
     aspect-ratio: 1/1;
    background-size: 2400% 100%;
     background-image: url(../img/img_personnages/spritesheet_chat_marchestp.png);
@@ -136,7 +148,7 @@ section {
   
 
   .spritefall {
-    width: 70vw;
+    width: 80vw;
     aspect-ratio: 1/1;
    background-size: 2400% 100%;
     background-image: url(../img/img_personnages/spritesheet_tomberstp.png);
@@ -165,3 +177,79 @@ section {
     animation-play-state: running;
 
 }  
+
+#tomber .spritefall  {
+    position: absolute;
+    left: 10vw;
+    top: -43vh;
+
+}
+
+.boucle {
+    position: absolute;
+    top: 20vh;
+    left: 47vw;
+    width: 4vw;
+
+
+}
+
+.collier {
+    position: absolute;
+    top: 33vh;
+    left: 47vw;
+    width: 5vw;
+
+}
+
+.vuedessus {
+    position: absolute;
+    width: 6vw;
+    left: 15vw;
+    top: 20vh;
+
+
+}
+
+.treefront {
+    position: absolute;
+    top: 20vh;
+    width:100vw;
+    right: 1vw;
+
+}
+
+.treeback {
+    position: absolute;
+    top: -11vh;
+    width:100vw;
+    right: 4.5vw;
+}
+
+.spritemarche {
+    position: absolute;
+    top: 57vh;
+    right: 20vw;
+}
+
+.question_1 {
+    position: absolute;
+    width: 15vw;
+    left: 20vw;
+    top: 17vh;
+}
+
+.question_2 {
+    position: absolute;
+    width: 15vw;
+    right: 17vw;
+    top: 17vh;
+}
+
+.etoileminou {
+    position: absolute;
+    bottom: 5vh;
+    left: 45vw;
+    width: 15vw;
+}
+
