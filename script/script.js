@@ -3,6 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 const cta = document.querySelector(".cta");
 const body = document.querySelector("body");
 let minuteur;
+const vagabond = document.getElementById('rue');
 
 window.addEventListener("scroll",(minuteur)=>{
     clearTimeout(minuteur);
@@ -35,6 +36,10 @@ gsap.from('.cta',{
  .from(".question_2", { rotation:"360", ease:'in', repeat: -1, duration: 3}, 0.25);
 
  gsap.from('.vuedessus',{
+    scrollTrigger: {
+        trigger: vagabond,
+        start: "80% bottom"
+      },
     repeat: -1,
     top: '5vh',
     rotate: '90',
