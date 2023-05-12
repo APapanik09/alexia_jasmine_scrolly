@@ -1,6 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
-gsap.registerPlugin(DrawSVGPlugin);
-gsap.registerPlugin(MotionPathPlugin);
+//gsap.registerPlugin(DrawSVGPlugin);
+//gsap.registerPlugin(MotionPathPlugin);
 
 const cta = document.querySelector(".cta");
 const body = document.querySelector("body");
@@ -106,7 +106,7 @@ gsap.from('.etoileminou',{
 
 })
 
-/*-- svg pas fonctionner 
+/*-- svg draw
 
 gsap.set("#starsvg",{drawSVG:"0% 0%"});
 
