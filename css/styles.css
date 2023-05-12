@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'gilles';
-    src: url(/fonts/Gilles_Handwriting.ttf);
+    src: url(../fonts/Gilles_Handwriting.ttf);
 }
 
 @font-face {
     font-family: 'min';
-    src: url(/fonts/MinSans-Regular.ttf);
+    src: url(../fonts/MinSans-Regular.ttf);
 }
 
 :root {
