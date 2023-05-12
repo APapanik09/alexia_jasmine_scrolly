@@ -1,9 +1,18 @@
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
 
 const cta = document.querySelector(".cta");
 const body = document.querySelector("body");
 let minuteur;
 const vagabond = document.getElementById('rue');
+const byebye = document.getElementById('tomber');
+const loin = document.getElementById('foretloin');
+const marche = document.getElementById('foretmarche');
+const rencontre = document.getElementById('rencontrechat');
+const peche = document.getElementById('pechechat');
+const etoile = document.getElementById('etoilechat');
+
 
 window.addEventListener("scroll",(minuteur)=>{
     clearTimeout(minuteur);
@@ -22,25 +31,29 @@ gsap.from('.cta',{
 })
 
 
-//repeat mis pour montrer l'animation avant l'étape du scrolltrigger
+/* ----- Animation Chapitre 2 -----*/
 
  gsap
- .timeline()
+ .timeline({scrollTrigger:{
+    trigger: byebye,
+    start: 'top',
+    pin: true,
+    scrub: true,
+    
+ }})
  .from(".spritefall", { bottom: '10vh', duration: 3, ease: 'in', repeat: -1 })
- .from(".boucle", { top:"20vh", ease:'in', repeat: -1, duration: 3, opacity: '100%'}, 0.25)
- .from(".collier", { top:"33vh",ease:'in', repeat: -1, duration: 3, opacity: '100%'}, 0.25);
-
- gsap
- .timeline()
- .from(".question_1", {y: '20px', yoyo:true, ease: 'in', repeat: -1 })
- .from(".question_2", { rotation:"360", ease:'in', repeat: -1, duration: 3}, 0.25);
+ .from(".boucle", { top:"20vh", ease:'in', duration: 3, opacity: '100%'}, 0.25)
+ .from(".collier", { top:"33vh",ease:'in', duration: 3, opacity: '100%'}, 0.25);
+ 
+  /* ----- Animation Chapitre 3 -----*/
 
  gsap.from('.vuedessus',{
     scrollTrigger: {
         trigger: vagabond,
-        start: "80% bottom"
+        start: "top",
+        pin: true,
+        scrub: true,
       },
-    repeat: -1,
     top: '5vh',
     rotate: '90',
     left: '10vw',
@@ -48,18 +61,65 @@ gsap.from('.cta',{
     ease: 'in-out'
     
 
-})
+}) 
+
+/* ----- Animation Chapitre 5 -----*/
 
 gsap
-.timeline()
-.from(".spritemarche", {left: '-90vw', ease: 'out', repeat: -1, duration: 4})
-.from(".chatsaute", { rotation:"-10", ease:'out', repeat: -1, duration: 2, right:'5vw', bottom: '55vh', opacity: '0'}, 3);
+.timeline({scrollTrigger:{
+    trigger: marche,
+    start: 'top',
+    pin: true,
+    scrub: true,
+ }})
+.from(".spritemarche", {left: '-90vw', ease: 'out', duration: 4})
+.from(".treeback", {left: '-90vw', ease: 'out', duration: 8})
+.from(".chatsaute", { rotation:"-10", ease:'out', duration: 2, right:'5vw', bottom: '55vh', opacity: '0'}, 3);
+
+ /* ----- Animation Chapitre 6 -----*/
+
+ gsap
+ .timeline({scrollTrigger:{
+    trigger: rencontre,
+    start: 'top',
+    pin: true,
+    scrub: true,
+ }})
+ .from(".question_1", {y: '20px', yoyo: true, ease: 'in'})
+ .from(".question_2", { rotation:"360", ease:'in', duration: 3, repeat: -1}, 0.25);
+
+
+
+ /* ----- Animation Chapitre 7 -----*/
 
 gsap.from('.etoileminou',{
-    repeat: -1,
+    scrollTrigger: {
+        trigger: etoile,
+        start: "top",
+        pin: true,
+        scrub: true,
+      },
     top: '-10vh',
     duration: 3,
     ease: 'out',
     opacity: '0'
 
 })
+
+/*-- svg pas fonctionner 
+
+gsap.set("#starsvg",{drawSVG:"0% 0%"});
+
+function anim() {
+    gsap.fromTo(
+      "#starsvg",
+      { drawSVG: "0% 0%" },
+      {
+        drawSVG: "0% 100%",
+        duration: 5,
+      }
+    );
+  }
+
+  anim(); --*/
+
